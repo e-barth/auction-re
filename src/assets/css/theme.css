@@ -25748,3 +25748,18 @@ a:hover .text-inherit {
 /*------------------------------------
   File for your custom SCSS style
 ------------------------------------*/
+#email-validation .content-wrapper {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#email-validation .content-wrapper .btn {
+  width: 100%;
+  max-width: 200px;
+  margin: 1.5rem auto 0;
+}
+
+#loginModal .form-label {
+  margin-bottom: 0.2rem;
+}

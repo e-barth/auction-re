@@ -1,0 +1,14 @@
+#email-validation .content-wrapper {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#email-validation .content-wrapper p {
+  font-size: 140%;
+}
+#email-validation .content-wrapper .btn {
+  width: 100%;
+  max-width: 200px;
+  margin: 2rem auto 0;
+}

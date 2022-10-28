@@ -1,5 +1,5 @@
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <!-- Header -->
       <div class="modal-close">
@@ -12,8 +12,8 @@
         <!-- Log in -->
         <div id="loginModalFormLogin">
           <!-- Heading -->
-          <div class="text-center mb-7">
-            <h3 class="modal-title">Log in to Front</h3>
+          <div class="text-center mb-5">
+            <h3 class="modal-title">Log in</h3>
             <p>Login to manage your account</p>
           </div>
           <!-- End Heading -->
@@ -28,7 +28,7 @@
             <!-- End Form -->
 
             <!-- Form -->
-            <div class="mb-3">
+            <div class="mb-5">
               <div class="d-flex justify-content-between align-items-center">
                 <label class="form-label" for="loginModalFormLoginPassword">Password</label>
 
@@ -71,40 +71,75 @@
         <!-- Log in -->
         <div id="loginModalFormSignup" style="display: none; opacity: 0;">
           <!-- Heading -->
-          <div class="text-center mb-7">
+          <div class="text-center mb-5">
             <h3 class="modal-title">Sign up</h3>
             <p>Fill out the form to get started</p>
           </div>
           <!-- End Heading -->
 
           <form class="js-validate needs-validation" novalidate>
+
+            <div class="user-type mb-3">
+              <span class="me-3">Signing up as:</span>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="user">
+                <label class="form-check-label" for="inlineRadio1">User</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="agent">
+                <label class="form-check-label" for="inlineRadio2">Agent</label>
+              </div>
+            </div>
+
             <!-- Form -->
-            <div class="mb-3">
+            <div class="mb-2">
+              <label class="form-label" for="signupModalFormSignupFirstName">Your first name</label>
+              <input type="first-name" class="form-control" name="first-name" id="signupModalFormSignupFirstName" placeholder="Your First Name" aria-label="first-name" required>              
+            </div>
+            <!-- End Form -->
+
+            <!-- Form -->
+            <div class="mb-2">
+              <label class="form-label" for="signupModalFormSignupLastName">Your last name</label>
+              <input type="last-name" class="form-control" name="last-name" id="signupModalFormSignupLastName" placeholder="Your Last Name" aria-label="last-name" required>              
+            </div>
+            <!-- End Form -->
+
+            <!-- Form -->
+            <div class="mb-2">
+              <label class="form-label" for="signupModalFormSignupUsername">Your username</label>
+              <input type="username" class="form-control" name="username" id="signupModalFormSignupUsername" placeholder="Your username" aria-label="username" required> 
+              <span class="invalid-feedback">This username already exists. Please choose another usernane.</span>             
+            </div>
+            <!-- End Form -->
+
+            <!-- Form -->
+            <div class="mb-2">
               <label class="form-label" for="loginModalFormSignupEmail">Your email</label>
-              <input type="email" class="form-control form-control-lg" name="email" id="loginModalFormSignupEmail" placeholder="email@site.com" aria-label="email@site.com" required>
+              <input type="email" class="form-control" name="email" id="loginModalFormSignupEmail" placeholder="email@site.com" aria-label="email@site.com" required>
               <span class="invalid-feedback">Please enter a valid email address.</span>
             </div>
             <!-- End Form -->
 
             <!-- Form -->
-            <div class="mb-3">
+            <div class="mb-2">
               <label class="form-label" for="loginModalFormSignupPassword">Password</label>
-              <input type="password" class="form-control form-control-lg" name="password" id="loginModalFormSignupPassword" placeholder="8+ characters required" aria-label="8+ characters required" required>
+              <input type="password" class="form-control" name="password" id="loginModalFormSignupPassword" placeholder="8+ characters required" aria-label="8+ characters required" required>
               <span class="invalid-feedback">Your password is invalid. Please try again.</span>
             </div>
             <!-- End Form -->
 
             <!-- Form -->
-            <div class="mb-3" data-hs-validation-validate-class>
+            <div class="mb-2" data-hs-validation-validate-class>
               <label class="form-label" for="loginModalFormSignupConfirmPassword">Confirm password</label>
-              <input type="password" class="form-control form-control-lg" name="confirmPassword" id="loginModalFormSignupConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required
+              <input type="password" class="form-control" name="confirmPassword" id="loginModalFormSignupConfirmPassword" placeholder="8+ characters required" aria-label="8+ characters required" required
                      data-hs-validation-equal-field="#loginModalFormSignupPassword">
               <span class="invalid-feedback">Password does not match the confirm password.</span>
             </div>
             <!-- End Form -->
 
-            <div class="text-center mb-3">
-              <p class="small mb-0">By continuing you agree to our <a href="#">Terms and Conditions</a></p>
+            <div class="text-center mt-3 mb-4">
+              <p class="small mb-0">By continuing you agree to our <a href="@@autopath/page-terms.html">Terms and Conditions</a></p>
             </div>
 
             <div class="d-grid gap-3 text-center">
