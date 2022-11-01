@@ -1,0 +1,7 @@
+.card .row > div {
+  display: flex;
+  align-items: center;
+}
+.card .card-img {
+  aspect-ratio: 3/2;
+}

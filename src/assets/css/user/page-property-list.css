@@ -1,0 +1,7 @@
+.property-list .card .col-md-4 {
+  display: flex;
+  align-items: center;
+}
+.property-list .card .card-img {
+  aspect-ratio: 3/2;
+}
