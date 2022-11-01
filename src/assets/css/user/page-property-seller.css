@@ -1,0 +1,43 @@
+:is(.type-of-listing, .type-of-property) .form-check input {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  opacity: 0;
+}
+:is(.type-of-listing, .type-of-property) .form-check input:checked {
+  opacity: 1;
+  background-image: none;
+  background-color: unset;
+}
+:is(.type-of-listing, .type-of-property) .form-check input:checked:after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="hsl(219,100%,61%)"><path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+:is(.type-of-listing, .type-of-property) img {
+  width: 110px;
+}
+@media (max-width: 767px) {
+  :is(.type-of-listing, .type-of-property) img {
+    width: 80px;
+  }
+}
+
+.upload-img .dz-dropzone-card {
+  display: flex;
+  flex-direction: column;
+}
+.upload-img .dz-dropzone-card .dz-dropzone {
+  width: max-content;
+}
+.upload-img .dz-message {
+  width: 100%;
+}

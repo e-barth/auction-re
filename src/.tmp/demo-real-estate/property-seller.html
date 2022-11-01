@@ -436,144 +436,78 @@
         <!-- End Heading -->
 
         <form>
-          <div class="mb-5">
-            <h4 class="my-7">Listing agent information</h4>
-
-            <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="listingAgentNameUploadForm">Listing agent name</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <i class="bi-person-fill"></i>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="listingAgentNameUploadForm" placeholder="Listing agent name" aria-label="Listing agent name">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="phoneNumberUploadForm">Phone number</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <i class="bi-telephone-inbound-fill"></i>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="phoneNumberUploadForm" placeholder="+x(xxx)xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-
-            <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="realEstateAgencyUploadForm">Real estate agency</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <i class="bi-briefcase-fill"></i>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="realEstateAgencyUploadForm" placeholder="Real estate agency" aria-label="Real estate agency">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="websiteAddressUploadForm">Website address</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <i class="bi-globe2"></i>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="websiteAddressUploadForm" placeholder="Website address" aria-label="Website address">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-
+          <div class="mb-5">                 
+            
             <h4 class="my-7">Type of listing</h4>
 
-            <div class="row gx-3">
-              <div class="col-6 col-md-3 mb-3">
-                <!-- Radio Check -->
+            <div class="row type-of-listing">
+              <div class="col-6 mb-3">                
                 <div class="form-check form-check-card text-center">
                   <input class="form-check-input" type="radio" name="typeOfListing" id="typeOfListing1">
                   <label class="form-check-label" for="typeOfListing1">
-                    <img class="w-50 mb-3" src="../assets/svg/illustrations/small-house.svg" alt="SVG">
-                    <span class="d-block">House</span>
+                    <img class="mb-2" src="../assets/svg/illustrations/small-house.svg" alt="SVG">
+                    <span class="d-block">Standard</span>
                   </label>
-                </div>
-                <!-- End Radio Check -->
-              </div>
-              <!-- End Col -->
+                </div>                
+              </div>              
 
-              <div class="col-6 col-md-3 mb-3">
-                <!-- Radio Check -->
+              <div class="col-6 mb-3">                
                 <div class="form-check form-check-card text-center">
                   <input class="form-check-input" type="radio" name="typeOfListing" id="typeOfListing2" checked>
                   <label class="form-check-label" for="typeOfListing2">
-                    <img class="w-50 mb-3" src="../assets/svg/illustrations/flat-house.svg" alt="SVG">
+                    <img class="mb-2" src="../assets/svg/illustrations/small-house-bid.svg" alt="SVG">
+                    <span class="d-block">Auction</span>
+                  </label>
+                </div>                
+              </div> 
+            </div> 
+
+            <h4 class="my-7">Type of property</h4>
+
+            <div class="row type-of-property">
+              <div class="col-6 mb-3">                
+                <div class="form-check form-check-card text-center">
+                  <input class="form-check-input" type="radio" name="typeOfListing" id="typeOfListing1">
+                  <label class="form-check-label" for="typeOfListing1">
+                    <img class="mb-2" src="../assets/svg/illustrations/multi-family-house.svg" alt="SVG">
+                    <span class="d-block">House</span>
+                  </label>
+                </div>                
+              </div>              
+
+              <div class="col-6 mb-3">                
+                <div class="form-check form-check-card text-center">
+                  <input class="form-check-input" type="radio" name="typeOfListing" id="typeOfListing2" checked>
+                  <label class="form-check-label" for="typeOfListing2">
+                    <img class="mb-2" src="../assets/svg/illustrations/flat-house.svg" alt="SVG">
                     <span class="d-block">Flat</span>
                   </label>
-                </div>
-                <!-- End Radio Check -->
-              </div>
-              <!-- End Col -->
+                </div>                
+              </div>  
 
-              <div class="col-6 col-md-3 mb-3">
-                <!-- Radio Check -->
-                <div class="form-check form-check-card text-center">
-                  <input class="form-check-input" type="radio" name="typeOfListing" id="typeOfListing3">
-                  <label class="form-check-label" for="typeOfListing3">
-                    <img class="w-50 mb-3" src="../assets/svg/illustrations/multi-family-house.svg" alt="SVG">
-                    <span class="d-block">Multi-family</span>
-                  </label>
-                </div>
-                <!-- End Radio Check -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-6 col-md-3 mb-3">
-                <!-- Radio Check -->
-                <div class="form-check form-check-card text-center">
-                  <input class="form-check-input" type="radio" name="typeOfListing" id="typeOfListing4">
-                  <label class="form-check-label" for="typeOfListing4">
-                    <img class="w-50 mb-3" src="../assets/svg/illustrations/farm-land.svg" alt="SVG">
-                    <span class="d-block">Farms/Land</span>
-                  </label>
-                </div>
-                <!-- End Radio Check -->
-              </div>
-              <!-- End Col -->
             </div>
-            <!-- End Row -->
 
             <h4 class="my-7">Listing information</h4>
 
             <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
+              <div class="col-12">                
                 <div class="mb-4">
-                  <label class="form-label" for="currencyUploadForm">Price</label>
-              
+                  <label class="form-label" for="addressUploadForm">Address</label>                  
+                  <div class="input-group input-group-merge">
+                    <span class="input-group-prepend input-group-text">
+                      <i class="bi-geo-alt-fill"></i>
+                    </span>
+                    <input type="text" class="form-control form-control-lg" id="addressUploadForm" placeholder="Address" aria-label="Address">
+                  </div>
+                </div>                
+              </div>
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm-6">                
+                <div class="mb-4">
+                  <label class="form-label" for="currencyUploadForm">Price</label>              
                   <div class="input-group input-group-merge">
                     <span class="input-group-prepend input-group-text">
                       <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
@@ -582,21 +516,18 @@
                     </span>
                     <input type="text" class="form-control form-control-lg" id="currencyUploadForm" placeholder="Price" aria-label="Price">
                   </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
+                </div>                
+              </div>              
               
               <div class="col-sm-6">
                 <label class="form-label" for="yearBuiltUploadForm">Year built</label>
-
                   <div class="input-group input-group-merge">
                     <span class="input-group-prepend input-group-text">
                       <i class="bi-calendar-week"></i>
                     </span>
                     <select id="yearBuiltUploadForm" class="form-select form-select-lg">
                       <option selected disabled>Select year</option>
-                      <option value="yearBuiltSelectOlder">Older</option>
+                      <option value="yearBuiltSelectOlder">Pre-1985</option>
                       <option value="yearBuiltSelect1985">1985</option>
                       <option value="yearBuiltSelect1986">1986</option>
                       <option value="yearBuiltSelect1987">1987</option>
@@ -630,89 +561,50 @@
                       <option value="yearBuiltSelect2015">2015</option>
                       <option value="yearBuiltSelect2016">2016</option>
                       <option value="yearBuiltSelect2017">2017</option>
+                      <option value="yearBuiltSelect2017">2018</option>
+                      <option value="yearBuiltSelect2017">2019</option>
+                      <option value="yearBuiltSelect2017">2020</option>
+                      <option value="yearBuiltSelect2017">2021</option>
+                      <option value="yearBuiltSelect2017">2022</option>
                     </select>
                   </div>
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
+              </div>   
+
+            </div>            
 
             <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="addressUploadForm">Address</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <i class="bi-geo-alt-fill"></i>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="addressUploadForm" placeholder="Address" aria-label="Address">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
 
-              <div class="col-sm-6">
-                <!-- Form -->
+              <div class="col-sm-6">                
                 <div class="mb-4">
-                  <label class="form-label" for="cityUploadForm">City/Province</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <i class="bi-building"></i>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="cityUploadForm" placeholder="City/Province" aria-label="City/Province">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-
-            <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="lotSizeUploadForm">Lot size</label>
-                  
+                  <label class="form-label" for="lotSizeUploadForm">Property size</label>                  
                   <div class="input-group input-group-merge">
                     <span class="input-group-prepend input-group-text">
                       <i class="bi-rulers"></i>
                     </span>
-                    <input type="text" class="form-control form-control-lg" id="lotSizeUploadForm" placeholder="Lot size" aria-label="Lot size">
+                    <input type="text" class="form-control form-control-lg" id="lotSizeUploadForm" placeholder="Property size (square feet)" aria-label="Lot size">
                   </div>
-                </div>
-                <!-- End Form -->
+                </div>                
               </div>
-              <!-- End Col -->
 
-              <div class="col-sm-6">
-                <!-- Form -->
+              <div class="col-sm-6">                
                 <div class="mb-4">
-                  <label class="form-label" for="postalCodeUploadForm">Postal code</label>
-                  
+                  <label class="form-label" for="lotSizeUploadForm">Land size</label>                  
                   <div class="input-group input-group-merge">
                     <span class="input-group-prepend input-group-text">
-                      <i class="bi-envelope-open-fill"></i>
+                      <i class="bi-rulers"></i>
                     </span>
-                    <input type="text" class="form-control form-control-lg" id="postalCodeUploadForm" placeholder="Postal code" aria-label="Postal code">
+                    <input type="text" class="form-control form-control-lg" id="lotSizeUploadForm" placeholder="Land size (square feet)" aria-label="Lot size">
                   </div>
-                </div>
-                <!-- End Form -->
+                </div>                
               </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
+         
+            </div>            
 
             <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
+
+              <div class="col-sm-6">                
                 <div class="mb-4">
                   <label class="form-label" for="bedroomUploadForm">Bedroom</label>
-
                   <div class="input-group input-group-merge">
                     <span class="input-group-prepend input-group-text">
                       <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
@@ -728,16 +620,12 @@
                       <option value="bedroom5plus">5+</option>
                     </select>
                   </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
+                </div>               
+              </div>              
 
-              <div class="col-sm-6">
-                <!-- Form -->
+              <div class="col-sm-6">                
                 <div class="mb-4">
                   <label class="form-label" for="BathroomUploadForm">Bathroom</label>
-
                   <div class="input-group input-group-merge">
                     <span class="input-group-prepend input-group-text">
                       <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
@@ -753,145 +641,34 @@
                       <option value="bathroom5plus">5+</option>
                     </select>
                   </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
+                </div>                
+              </div> 
 
-            <!-- Form -->
+            </div>     
+            
             <div class="mb-4">
-              <label class="form-label">Listing description</label>
-              
-              <!-- Quill -->
-              <div class="quill-custom">
-                <div class="js-quill" style="height: 15rem;"
-                     data-hs-quill-options='{
-                     "placeholder": "Type your message...",
-                      "modules": {
-                        "toolbar": [
-                          ["bold", "italic", "underline", "strike", "link", "image", "blockquote", "code", {"list": "bullet"}]
-                        ]
-                      }
-                     }'>
-                </div>
-              </div>
-              <!-- End Quill -->
-            </div>
-            <!-- End Form -->
+              <label class="form-label">Listing description</label>  
+              <textarea class="form-control" placeholder="Type your message..." rows="10"></textarea>                 
+            </div>            
 
-            <h4 class="my-7">Estimated running costs</h4>
+            <h4 class="mt-9 mb-7">Upload images</h4>
 
-            <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="mortgageUploadForm">Mortgage</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512"><path d="M271.06,144.3l54.27,14.3a8.59,8.59,0,0,1,6.63,8.1c0,4.6-4.09,8.4-9.12,8.4h-35.6a30,30,0,0,1-11.19-2.2c-5.24-2.2-11.28-1.7-15.3,2l-19,17.5a11.68,11.68,0,0,0-2.25,2.66,11.42,11.42,0,0,0,3.88,15.74,83.77,83.77,0,0,0,34.51,11.5V240c0,8.8,7.83,16,17.37,16h17.37c9.55,0,17.38-7.2,17.38-16V222.4c32.93-3.6,57.84-31,53.5-63-3.15-23-22.46-41.3-46.56-47.7L282.68,97.4a8.59,8.59,0,0,1-6.63-8.1c0-4.6,4.09-8.4,9.12-8.4h35.6A30,30,0,0,1,332,83.1c5.23,2.2,11.28,1.7,15.3-2l19-17.5A11.31,11.31,0,0,0,368.47,61a11.43,11.43,0,0,0-3.84-15.78,83.82,83.82,0,0,0-34.52-11.5V16c0-8.8-7.82-16-17.37-16H295.37C285.82,0,278,7.2,278,16V33.6c-32.89,3.6-57.85,31-53.51,63C227.63,119.6,247,137.9,271.06,144.3ZM565.27,328.1c-11.8-10.7-30.2-10-42.6,0L430.27,402a63.64,63.64,0,0,1-40,14H272a16,16,0,0,1,0-32h78.29c15.9,0,30.71-10.9,33.25-26.6a31.2,31.2,0,0,0,.46-5.46A32,32,0,0,0,352,320H192a117.66,117.66,0,0,0-74.1,26.29L71.4,384H16A16,16,0,0,0,0,400v96a16,16,0,0,0,16,16H372.77a64,64,0,0,0,40-14L564,377a32,32,0,0,0,1.28-48.9Z"/></svg>
-                      </span>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="mortgageUploadForm" placeholder="Mortgage" aria-label="Mortgage">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="energyUploadForm">Energy</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512"><path d="M192 0C79.7 101.3 0 220.9 0 300.5 0 425 79 512 192 512s192-87 192-211.5c0-79.9-80.2-199.6-192-300.5zm0 448c-56.5 0-96-39-96-94.8 0-13.5 4.6-61.5 96-161.2 91.4 99.7 96 147.7 96 161.2 0 55.8-39.5 94.8-96 94.8z"/></svg>
-                      </span>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="energyUploadForm" placeholder="Energy" aria-label="Energy">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-
-            <div class="row">
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="waterUploadForm">Water</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <span class="svg-icon svg-icon-xs svg-inline text-muted me-1">
-                        <i class="bi-droplet-half"></i>
-                      </span>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="waterUploadForm" placeholder="Mortgage" aria-label="Mortgage">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-
-              <div class="col-sm-6">
-                <!-- Form -->
-                <div class="mb-4">
-                  <label class="form-label" for="homeInsuranceUploadForm">Home insurance</label>
-                  
-                  <div class="input-group input-group-merge">
-                    <span class="input-group-prepend input-group-text">
-                      <i class="bi-shield-shaded"></i>
-                    </span>
-                    <input type="text" class="form-control form-control-lg" id="homeInsuranceUploadForm" placeholder="Home insurance" aria-label="Home insurance">
-                  </div>
-                </div>
-                <!-- End Form -->
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
-
-            <h4 class="my-7">Upload images</h4>
-
-            <div class="row">
-              <div class="col-lg-6 mb-3">
-                <label class="form-label">Property media</label>
-
-                <!-- File Attachment Input -->
-                <div id="imageDropzone" class="js-dropzone dz-dropzone dz-dropzone-card">
+            <div class="row upload-img">
+              <div class="col-12 mb-3">
+                <label class="form-label">Property media</label> 
+                <div class="dz-dropzone-card">
+                  <input class="dz-dropzone mb-3" type="file" ref="file" multiple="multiple">
                   <div class="dz-message">
                     <img class="avatar mb-3" src="../assets/svg/illustrations/add-file.svg" alt="SVG">
                     <span class="d-block">Browse your device and upload images</span>
                     <span class="d-block text-muted small">Maximum file size is 2MB</span>
                   </div>
-                </div>
-                <!-- End File Attachment Input -->
+                </div>  
               </div>
 
-              <div class="col-lg-6 mb-3">
-                <label class="form-label">Floorplan</label>
-
-                <!-- File Attachment Input -->
-                <div id="floorplanDropzone" class="js-dropzone dz-dropzone dz-dropzone-card">
-                  <div class="dz-message">
-                    <img class="avatar mb-3" src="../assets/svg/illustrations/add-file.svg" alt="SVG">
-                    <span class="d-block">Upload floorplan</span>
-                    <span class="d-block text-muted small">Maximum file size is 1MB</span>
-                  </div>
-                </div>
-                <!-- End File Attachment Input -->
-              </div>
             </div>
-          </div>
-          <!-- End Row -->
+
+          </div>          
 
           <div class="d-grid">
             <button type="submit" class="btn btn-primary btn-lg">Submit</button>
