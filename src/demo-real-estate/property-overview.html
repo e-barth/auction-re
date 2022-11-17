@@ -911,6 +911,9 @@
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Login Modal -->
+  @@include("@@autopath/partials/modal/login.html")
+
   <!-- Real Estate More Filters Modal -->
   @@include("@@autopath/partials/modal/real-estate-more-filters.html")
 
@@ -925,6 +928,7 @@
   <!-- bundlejs:vendor [@@autopath] -->
   <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>  
   <script src="@@autopath/node_modules/fslightbox/index.js"></script>
   <script src="@@autopath/assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
@@ -947,6 +951,11 @@
             position: 'left'
           }
         })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')  
 
 
       // INITIALIZATION OF BOOTSTRAP VALIDATION

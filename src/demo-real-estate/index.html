@@ -100,7 +100,7 @@
     <!-- End Hero -->
 
     <!-- Card Grid -->
-    <div class="container content-space-2 content-space-b-lg-3">
+    <div class="card-grid container content-space-2 content-space-b-lg-3">
       <!-- Title -->
       <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-7">
         <h2>New properties on Front</h2>
@@ -123,7 +123,7 @@
             <div class="card-body">
               <span class="card-subtitle text-body">For sale</span>
 
-              <div class="row align-items-center mb-3">
+              <div class="row mb-3">
                 <div class="col">
                   <h4 class="card-title text-inherit">Borrett Close, London</h4>
                 </div>
@@ -171,7 +171,7 @@
             <div class="card-body">
               <span class="card-subtitle text-body">For sale</span>
 
-              <div class="row align-items-center mb-3">
+              <div class="row mb-3">
                 <div class="col">
                   <h4 class="card-title text-inherit">The Drive, Ilford</h4>
                 </div>
@@ -223,7 +223,7 @@
             <div class="card-body">
               <span class="card-subtitle text-body">For sale</span>
 
-              <div class="row align-items-center mb-3">
+              <div class="row mb-3">
                 <div class="col">
                   <h4 class="card-title text-inherit">Alderney House, Enfield</h4>
                 </div>
@@ -271,7 +271,7 @@
             <div class="card-body">
               <span class="card-subtitle text-body">For rent</span>
 
-              <div class="row align-items-center mb-3">
+              <div class="row mb-3">
                 <div class="col">
                   <h4 class="card-title text-inherit">Burns Way, Hounslow</h4>
                 </div>
@@ -319,7 +319,7 @@
             <div class="card-body">
               <span class="card-subtitle text-body">For rent</span>
 
-              <div class="row align-items-center mb-3">
+              <div class="row mb-3">
                 <div class="col">
                   <h4 class="card-title text-inherit">14 Oakridge, Dr Unit</h4>
                 </div>
@@ -371,7 +371,7 @@
             <div class="card-body">
               <span class="card-subtitle text-body">For rent</span>
 
-              <div class="row align-items-center mb-3">
+              <div class="row mb-3">
                 <div class="col">
                   <h4 class="card-title text-inherit">6 Milne Avenue, Matraville</h4>
                 </div>
@@ -850,6 +850,9 @@
   <!-- ========== END FOOTER ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Login Modal -->
+  @@include("@@autopath/partials/modal/login.html")
+  
   <!-- Go To -->
   @@include("@@autopath/partials/layouts-components/go-to.html")
   <!-- ========== END SECONDARY CONTENTS ========== -->
@@ -858,9 +861,10 @@
   <script src="@@autopath/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- JS Implementing Plugins -->
-  <!-- bundlejs:vendor [@@autopath] -->
+  <!-- bundlejs:vendor [@@autopath] -->  
   <script src="@@autopath/assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   <script src="@@autopath/assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  <script src="@@autopath/assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>  
   <script src="@@autopath/node_modules/typed.js/lib/typed.min.js"></script>
 
   <!-- JS Front -->
@@ -872,7 +876,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function() {    
       // INITIALIZATION OF MEGA MENU
       // =======================================================
       new HSMegaMenu('.js-mega-menu', {
@@ -880,6 +884,11 @@
             position: 'left'
           }
         })
+
+
+      // INITIALIZATION OF SHOW ANIMATIONS
+      // =======================================================
+      new HSShowAnimation('.js-animation-link')
 
 
       // INITIALIZATION OF BOOTSTRAP VALIDATION
